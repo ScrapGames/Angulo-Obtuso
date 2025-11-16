@@ -1,7 +1,7 @@
 <ol>
     @for (chapter of chapters(); track chapter.id) {
-        <a routerLink="/ch-{{chapter.id.toString().replaceAll('.', '-')}}">
-            <li>{{chapter.id}}. {{chapter.title}}</li>
+        <a routerLink="{{chapter.id}}">
+            <li>{{chapter.order}}. {{chapter.title}}</li>
         </a>
         @if (chapter.subchapters.length > 0) {
             <app-list [chapters]="chapter.subchapters" />

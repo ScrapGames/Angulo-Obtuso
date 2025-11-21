@@ -5,9 +5,9 @@
     src: url(/fonts/LexendDeca-Regular.ttf);
 }
 
-:root{
-    --colorPrincipal: #DE4C36;
-    --fondoPrincipal: #e0a49a;
+@theme {
+    --color-principal: #DE4C36;
+    --fondo-principal: #e0a49a;
 }
 
 html, body {

@@ -4,10 +4,16 @@
     font-family: Lexend;
     src: url(/fonts/LexendDeca-Regular.ttf);
 }
+@font-face {
+    font-family: Cascadia;
+    src: url(/fonts/CascadiaCode-Regular.ttf);
+}
 
 @theme {
     --color-principal: #DE4C36;
     --color-fondo: #e0a49a;
+    --color-console: #1e2634;
+    --font-code: "Cascadia"
 }
 
 html, body {

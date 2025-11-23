@@ -1,8 +1,8 @@
 <ol class="[&_li]:mb-1.5">
     @for (chapter of chapters(); track chapter.id) {
-        <a routerLink="/{{chapter.id}}">
-            <li>{{chapter.order}}. {{chapter.title}}</li>
-        </a>
+        <li>
+            <a routerLink="/{{chapter.id}}">{{chapter.order}}. {{chapter.title}}</a>
+        </li>
         @if (chapter.subchapters.length > 0) {
             <app-list class="[&>ol]:ml-5" [chapters]="chapter.subchapters" />
         }
